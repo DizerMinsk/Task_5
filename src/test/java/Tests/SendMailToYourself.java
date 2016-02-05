@@ -22,8 +22,8 @@ public class SendMailToYourself {
     WebDriver driver = new FirefoxDriver();
     Gmail gmail = new Gmail();
 
-    String login1 = "mikalai.plinda@gmail.com";
-    String password1 = "qq507080qq";
+    String login1 = "seleniumtest111122@gmail.com";
+    String password1 = "QQwerty1122";
     String thema1 = "Proverka";
     List<WebElement> list1 = new ArrayList<WebElement>();
     List<WebElement> list2 = new ArrayList<WebElement>();
@@ -61,7 +61,7 @@ public class SendMailToYourself {
 
         for(int i=0; i<list1.size();i++)
         {
-            list3.add(list1.get(i).getAttribute("email")+"@1"+list2.get(i).getText());
+            list3.add(list1.get(i).getAttribute("email")+"@"+list2.get(i).getText());
             System.out.println(list3.get(i));
         }
 
